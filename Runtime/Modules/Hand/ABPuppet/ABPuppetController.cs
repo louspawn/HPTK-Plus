@@ -516,7 +516,7 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
 
                 foreach (ArticulationNode node in repr.articulationNodes)
                 {
-                    node.ab.velocity = Vector3.zero;
+                    node.ab.linearVelocity = Vector3.zero;
                     node.ab.angularVelocity = Vector3.zero;
                 }
             }
@@ -536,7 +536,7 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
 
                 foreach (ArticulationNode node in repr.articulationNodes)
                 {
-                    if (node.ab.velocity.magnitude > model.configuration.MaxLinearVelocity ||
+                    if (node.ab.linearVelocity.magnitude > model.configuration.MaxLinearVelocity ||
                         node.ab.angularVelocity.magnitude > model.configuration.MaxAngularVelocity)
                     {
                         PerformBodyReset(node.ab);
@@ -571,7 +571,7 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
 
         void PerformBodyReset(ArticulationBody body)
         {
-            body.velocity = Vector3.zero;
+            body.linearVelocity = Vector3.zero;
             body.angularVelocity = Vector3.zero;
 
             resetInProcess = true;

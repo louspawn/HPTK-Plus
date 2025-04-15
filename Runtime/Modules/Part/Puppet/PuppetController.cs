@@ -292,8 +292,8 @@ namespace HandPhysicsToolkit.Modules.Part.Puppet
 
             // Rb
             slave.pheasy.rb.mass = conf.rigidbodyMass;
-            slave.pheasy.rb.drag = conf.rigidbodyDrag;
-            slave.pheasy.rb.angularDrag = conf.rigidbodyAngularDrag;
+            slave.pheasy.rb.linearDamping = conf.rigidbodyDrag;
+            slave.pheasy.rb.angularDamping = conf.rigidbodyAngularDrag;
             slave.pheasy.rb.useGravity = conf.useGravity;
 
             // Stability

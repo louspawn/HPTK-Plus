@@ -31,7 +31,7 @@ namespace HandPhysicsToolkit.Physics
                 transform.position = initialWorldPos;
                 transform.rotation = initialWorldRot;
 
-                pheasy.rb.velocity = Vector3.zero;
+                pheasy.rb.linearVelocity = Vector3.zero;
             }
         }
     }

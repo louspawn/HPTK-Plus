@@ -24,7 +24,7 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
         public float MaxAngularVelocity = 1f;
         public float MaxDepenetrationVelocity = 1f;
         public float MaxJointVelocity = 1f;
-        public PhysicMaterial HandPhysicMaterial;
+        public PhysicsMaterial HandPhysicMaterial;
 
         public UnityEvent OnConfigurationChange;
 

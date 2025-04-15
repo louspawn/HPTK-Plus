@@ -137,11 +137,11 @@ namespace HandPhysicsToolkit.Physics
                 // Limit linear acc
                 if (maxLinearAcceleration >= 0.0f)
                 {
-                    currentLinearAcceleration = (rb.velocity.magnitude - lastLinearVelocity) / Time.fixedDeltaTime;
+                    currentLinearAcceleration = (rb.linearVelocity.magnitude - lastLinearVelocity) / Time.fixedDeltaTime;
                     maxLinearVelocity = lastLinearVelocity + Mathf.Clamp(currentLinearAcceleration, 0.0f, maxLinearAcceleration) * Time.fixedDeltaTime;
-                    rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxLinearVelocity);
+                    rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, maxLinearVelocity);
                     rb.maxLinearVelocity = maxLinearVelocity;
-                    lastLinearVelocity = rb.velocity.magnitude;
+                    lastLinearVelocity = rb.linearVelocity.magnitude;
                 }
 
                 // Limit angular acc
@@ -573,7 +573,7 @@ namespace HandPhysicsToolkit.Physics
 
         public void StopLinearMovement()
         {
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
         }
 
         public void StopAngularMovement()
