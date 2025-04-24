@@ -60,8 +60,6 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
         public override void ControllerUpdate()
         {
             base.ControllerUpdate();
-
-            //
         }
 
         void FixedUpdate()
@@ -562,7 +560,6 @@ namespace HandPhysicsToolkit.Modules.Hand.ABPuppet
                         ABPuppetReprModel boneRepr = bone.reprs[ABPuppetModel.key] as ABPuppetReprModel;
                         boneRepr.abFollower.OnScaleChange();
                     }
-
                 }
 
                 prevWristLocalScale = puppetHandTsf.localScale;
