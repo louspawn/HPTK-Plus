@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb44ca79dda8f2b49a74b9f385191d05, type: 3}
+  m_Script: {fileID: 11500000, guid: e7f888b5a59fb9044add730a58788d10, type: 3}
   m_Name: Default
   m_EditorClassIdentifier: 
   Root:
@@ -61,7 +61,7 @@ MonoBehaviour:
   MaxAngularVelocity: 40
   MaxDepenetrationVelocity: 4
   MaxJointVelocity: 40
-  HandPhysicMaterial: {fileID: 13400000, guid: 3dbba5d02124e154eb777febee11725e, type: 2}
+  HandPhysicMaterial: {fileID: 13400000, guid: 51980ec24c7ccb540a4deca9095e8ab7, type: 2}
   OnConfigurationChange:
     m_PersistentCalls:
       m_Calls: []
