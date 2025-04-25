@@ -82,5 +82,21 @@ Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/master/setup) for a d
 
 [Comparing Physics-based Hand Interaction in Virtual Reality: Custom Soft Body Simulation vs. Off-the-Shelf Integrated Solution](https://github.com/louspawn/VR-physics-based-hand-interaction-comparison)
 
+## Cite our work
+
+```
+@INPROCEEDINGS{10494127,
+  author={Lougiakis, Christos and González, Jorge Juan and Ganias, Giorgos and Katifori, Akrivi and Ioannis-Panagiotis and Roussou, Maria},
+  booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
+  title={Comparing Physics-based Hand Interaction in Virtual Reality: Custom Soft Body Simulation vs. Off-the-Shelf Integrated Solution}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={743-753},
+  keywords={Three-dimensional displays;Scalability;Virtual environments;User interfaces;Particle measurements;User experience;Software;Human-centered computing;Human computer interaction (HCI);Interaction techniques;Computing methodologies;Modeling and simulation;Simulation support systems;Simulation environments;Interaction paradigms;Virtual reality},
+  doi={10.1109/VR58804.2024.00094}
+}
+```
+
 # License
 [MIT](./LICENSE.md)
