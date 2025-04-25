@@ -1,25 +1,21 @@
 <p align="center">
-  <img src="https://imgur.com/QHED9DH.png" height="150" alt="logo"><br>
+  <img width="540" alt="HPTK+_Logo" src="https://github.com/user-attachments/assets/47d27c52-5c68-407b-89ed-90c046d504f9" /><br>
   <a href="https://unity3d.com/es/get-unity/download/archive"><img src="https://img.shields.io/badge/unity-2019.4%20or%20later-green.svg" alt=""></a>
   <a href="https://github.com/jorgejgnz/HPTK/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="https://github.com/jorgejgnz/HPTK/releases"><img src="https://img.shields.io/badge/version-0.6.7-blue" alt="version"></a>
-  <a href="https://discord.gg/TuzhMZQpDy"><img src="https://img.shields.io/discord/679793598958403620?logo=discord" alt=""></a>
-  <a href="https://twitter.com/intent/follow?screen_name=jorgejgnz"><img src="https://img.shields.io/twitter/follow/jorgejgnz.svg?label=Follow&amp;style=social" alt=""></a>
+  <a href="https://github.com/jorgejgnz/HPTK/releases"><img src="https://img.shields.io/badge/version-0.7.0-blue" alt="version"></a>
 </p><br>
 
 <p align="center">
-  <strong>Hand Physics Toolkit (HPTK)</strong> is a toolkit to implement hand-driven interactions in a modular and scalable way. Platform-independent. Input-independent. Scale-independent. Can be combined with <a href="https://github.com/provencher/MRTK-Quest">MRTK-Quest</a> for UI interactions.
+  <strong>Hand Physics Toolkit Plus (HPTK+)</strong> is a toolkit to implement hand-driven interactions in a modular and scalable way. <br>Platform-independent. Input-independent. Scale-independent.
 </p><br>
 
 <p align="center">
-  A ready-to-go project is available at <a href="https://github.com/jorgejgnz/HPTK-Sample">HPTK-Sample</a>.<br><br>
   <img src="https://media.giphy.com/media/5A9I0c8uwBTUuPwv4N/giphy.gif" height="500" alt="sample"><br><br>
 </p>
 
-> # ⚠️ Project Status: No longer maintained
-> This project is no longer actively maintained or supported.
-> If you want to continue the development, feel free to make a fork.
-> Thanks to everyone who contributed, used or supported this project!
+> # ⚠️ Project Status
+> The [original project](https://github.com/jorgejgnz/HPTK) is no longer maintained or supported.
+> I have made a fork, solved some problems we had with Jorge when trying to integrate my implementation of Articulation Bodies on the dev branch in the past, and merged everything on the main branch. I won't have availability to actively support the project, but feel free to open any issues you might find and if I ever find some time I will try to tackle them.
 
 # Main features
 - **Data model** to access parts, components or calculated values with very little code
@@ -36,12 +32,13 @@
 # Documentation
 
 Some documentation entries:
-- [Home](https://jorge-jgnz94.gitbook.io/hptk/)
-- [Setup](https://jorge-jgnz94.gitbook.io/hptk/setup)
-- [FAQs](https://jorge-jgnz94.gitbook.io/hptk/faqs)
+- [Home](https://jorge-jgnz94.gitbook.io/hptk/master)
+- [Setup](https://jorge-jgnz94.gitbook.io/hptk/master/setup)
+- [FAQs](https://jorge-jgnz94.gitbook.io/hptk/master/faqs)
 
 # Supported versions
-- Unity 2022
+- Unity 6
+- Unity 2022, 2023
 - Unity 2019-2021 (Legacy)
 
 # Supported input
@@ -64,29 +61,26 @@ Some documentation entries:
 
 1. Obtain **HPTK**
 1. Change **ProjectSettings & BuildSettings**
-1. Import the built-in **integration packge** (if needed)
+1. Import the built-in **integration package** (if needed)
 1. Drag & drop the **default setup** to your scene
 1. **Build and test**
 
-Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/setup) for a detailed **step-by-step guide**.
+Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/master/setup) for a detailed **step-by-step guide**.
 
-# Author
+# Original Author
 **Jorge Juan González**
 
 [LinkedIn](https://www.linkedin.com/in/jorgejgnz/) - [Twitter](https://twitter.com/jorgejgnz) - [GitHub](https://github.com/jorgejgnz)
 
-## Acknowledgements
+# Contributing Author
 
-**Oxters Wyzgowski** - [GitHub](https://github.com/oxters168) - [Twitter](https://twitter.com/OxGamesCo)
+**Christos Lougiakis**
 
-**Michael Stevenson** - [GitHub](https://github.com/mstevenson)
+[Website](https://louspawn.github.io/) - [LinkedIn](https://www.linkedin.com/in/christos-lougiakis/) - [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oQsbYAkAAAAJ) - [Youtube](https://www.youtube.com/user/louspawn10/videos) - [Github](https://github.com/louspawn)
 
-Andreea Muresan, Jess Mcintosh, and Kasper Hornbæk. 2023. [Using Feedforward to Reveal Interaction Possibilities in Virtual Reality](https://dl.acm.org/doi/full/10.1145/3603623). ACM Trans. Comput.-Hum. Interact. 30, 6, Article 82 (December 2023), 47 pages. https://doi.org/10.1145/3603623
+## Publication
 
-Nasim, K, Kim, YJ. Physics-based assistive grasping for robust object manipulation in virtual reality. Comput Anim Virtual Worlds. 2018; 29:e1820. [https://doi.org/10.1002/cav.1820](https://doi.org/10.1002/cav.1820)
-
-Linn, Allison. Talking with your hands: How Microsoft researchers are moving beyond keyboard and mouse. The AI Blog. Microsoft. 2016
-[https://blogs.microsoft.com/](https://blogs.microsoft.com/ai/talking-hands-microsoft-researchers-moving-beyond-keyboard-mouse/)
+[Comparing Physics-based Hand Interaction in Virtual Reality: Custom Soft Body Simulation vs. Off-the-Shelf Integrated Solution](https://github.com/louspawn/VR-physics-based-hand-interaction-comparison)
 
 # License
 [MIT](./LICENSE.md)
