@@ -15,7 +15,7 @@
 
 > # ⚠️ Project Status
 > The [original project](https://github.com/jorgejgnz/HPTK) is no longer maintained or supported.
-> I have made a fork, solved some problems we had with Jorge when trying to integrate my implementation of Articulation Bodies on the dev branch in the past, and merged everything on the main branch. I won't have availability to actively support the project, but feel free to open any issues you might find and if I ever find some time I will try to tackle them.
+> I have made a fork, solved some problems we had with Jorge when trying to integrate my implementation of Articulation Bodies on the dev branch in the past, and merged everything on the main branch. I won't have availability to actively support the project, but feel free to open any issues you might find and whenever I find some time I will try to tackle them.
 
 # Main features
 - **Data model** to access parts, components or calculated values with very little code
@@ -31,7 +31,7 @@
 
 # Documentation
 
-⚠️ Warning! The contents of the documentation, even though they have been written for the older versions of HPTK, still hold true for this version with one caveat. In Unity versions 2022+ whenever there is a reference to an avatar prefab, find and use the .AB version of it.
+⚠️ Warning! The contents of the documentation, even though they have been written for the older versions of HPTK, still hold true for this version but with one caveat. In Unity versions 2022+ and 6 whenever there is a reference to a prefab, find and use the one that contains ".AB" in its name if available.
 
 Some documentation entries:
 - [Home](https://jorge-jgnz94.gitbook.io/hptk/master)
@@ -39,6 +39,7 @@ Some documentation entries:
 - [FAQs](https://jorge-jgnz94.gitbook.io/hptk/master/faqs)
 
 # Supported versions
+- Unity 6 (Articulation Bodies) 
 - Unity 2022+ (Articulation Bodies)
 - Unity 2019-2021 (Legacy)
 
@@ -58,32 +59,30 @@ Some documentation entries:
 - Universal Render Pipeline (URP)
 - Standard RP
 
-# Getting started with HPTK (Oculus Quest)
+# Getting started with HPTK+ (Oculus Quest)
 
-1. Obtain **HPTK**
+1. Obtain **HPTK+**
 1. Change **ProjectSettings & BuildSettings**
 1. Import the built-in **integration package** (if needed)
-1. Drag & drop the **default setup** to your scene (the one with the .AB postfix for Unity 2022+)
+1. Drag & drop the **default setup** to your scene (the one with the ".AB postfix" if available for Unity 2022+ and 6)
 1. **Build and test**
 
 Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/master/setup) for a detailed **step-by-step guide**.
 
-# Original Author
+# Original Developer
 **Jorge Juan González**
 
 [LinkedIn](https://www.linkedin.com/in/jorgejgnz/) - [Twitter](https://twitter.com/jorgejgnz) - [GitHub](https://github.com/jorgejgnz)
 
-# Contributing Author
+# Contributing Developer
 
 **Christos Lougiakis**
 
 [Website](https://louspawn.github.io/) - [LinkedIn](https://www.linkedin.com/in/christos-lougiakis/) - [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oQsbYAkAAAAJ) - [Youtube](https://www.youtube.com/user/louspawn10/videos) - [Github](https://github.com/louspawn)
 
-## Publication
-
-[Comparing Physics-based Hand Interaction in Virtual Reality: Custom Soft Body Simulation vs. Off-the-Shelf Integrated Solution](https://github.com/louspawn/VR-physics-based-hand-interaction-comparison)
-
 ## Cite our work
+
+In case you use HPTK+, please add a citation of our paper "[Comparing Physics-based Hand Interaction in Virtual Reality: Custom Soft Body Simulation vs. Off-the-Shelf Integrated Solution](https://github.com/louspawn/VR-physics-based-hand-interaction-comparison)" where we present the theoretical background, architecture and capabilities of the tool. Thank you!
 
 ```
 @INPROCEEDINGS{10494127,
