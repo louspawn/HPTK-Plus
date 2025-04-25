@@ -31,14 +31,15 @@
 
 # Documentation
 
+⚠️ Warning! The contents of the documentation, even though they have been written for the older versions of HPTK, still hold true for this version with one caveat. In Unity versions 2022+ whenever there is a reference to an avatar prefab, find and use the .AB version of it.
+
 Some documentation entries:
 - [Home](https://jorge-jgnz94.gitbook.io/hptk/master)
 - [Setup](https://jorge-jgnz94.gitbook.io/hptk/master/setup)
 - [FAQs](https://jorge-jgnz94.gitbook.io/hptk/master/faqs)
 
 # Supported versions
-- Unity 6
-- Unity 2022, 2023
+- Unity 2022+ (Articulation Bodies)
 - Unity 2019-2021 (Legacy)
 
 # Supported input
@@ -62,7 +63,7 @@ Some documentation entries:
 1. Obtain **HPTK**
 1. Change **ProjectSettings & BuildSettings**
 1. Import the built-in **integration package** (if needed)
-1. Drag & drop the **default setup** to your scene
+1. Drag & drop the **default setup** to your scene (the one with the .AB postfix for Unity 2022+)
 1. **Build and test**
 
 Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/master/setup) for a detailed **step-by-step guide**.
