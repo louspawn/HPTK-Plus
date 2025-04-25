@@ -64,7 +64,7 @@ Some documentation entries:
 1. Obtain **HPTK+**
 1. Change **ProjectSettings & BuildSettings**
 1. Import the built-in **integration package** (if needed)
-1. Drag & drop the **default setup** to your scene (the one with the ".AB postfix" if available for Unity 2022+ and 6)
+1. Drag & drop the **default setup** to your scene (the one with the ".AB" postfix if available for Unity 2022+ and 6)
 1. **Build and test**
 
 Check [documentation](https://jorge-jgnz94.gitbook.io/hptk/master/setup) for a detailed **step-by-step guide**.
