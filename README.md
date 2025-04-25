@@ -1,8 +1,8 @@
 <p align="center">
   <img width="540" alt="HPTK+_Logo" src="https://github.com/user-attachments/assets/47d27c52-5c68-407b-89ed-90c046d504f9" /><br>
-  <a href="https://unity3d.com/es/get-unity/download/archive"><img src="https://img.shields.io/badge/unity-2019.4%20or%20later-green.svg" alt=""></a>
-  <a href="https://github.com/jorgejgnz/HPTK/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="https://github.com/jorgejgnz/HPTK/releases"><img src="https://img.shields.io/badge/version-0.7.0-blue" alt="version"></a>
+  <a href="https://unity.com/download"><img src="https://img.shields.io/badge/unity-2019.4%20or%20later-green.svg" alt=""></a>
+  <a href="https://github.com/louspawn/HPTK-Plus/tree/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://github.com/louspawn/HPTK-Plus/releases"><img src="https://img.shields.io/badge/version-0.7.0-blue" alt="version"></a>
 </p><br>
 
 <p align="center">
