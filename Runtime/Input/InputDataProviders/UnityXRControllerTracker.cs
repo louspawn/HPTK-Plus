@@ -1,4 +1,5 @@
 ﻿using HandPhysicsToolkit.Helpers;
+using HandPhysicsToolkit.Assets;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -54,7 +55,7 @@ namespace HandPhysicsToolkit.Input
         InputDevice device;
 
         string currentDeviceName, currentDeviceManufacturer;
-        DeviceConfiguration deviceOffset;
+        DeviceConfiguration compatibleDevice;
 
         List<InputFeatureUsage> usages = new List<InputFeatureUsage>();
 
@@ -75,7 +76,6 @@ namespace HandPhysicsToolkit.Input
             if (inputDevices.Count < 1)
             {
                 log = Time.time.ToString("F2") + " Controller for " + side.ToString() + " side was not found! Interrupting update";
-                Debug.LogError(log);
 
                 confidence = 0.0f;
 
@@ -85,7 +85,6 @@ namespace HandPhysicsToolkit.Input
             if (inputDevices.Count > 1)
             {
                 log = Time.time.ToString("F2") + " More than one controller was found for that side! Interrupting update";
-                Debug.LogError(log);
 
                 confidence = 0.0f;
 
@@ -95,7 +94,6 @@ namespace HandPhysicsToolkit.Input
             if (openHand.fingers.Count != 5 || pinch.fingers.Count != 5 || fist.fingers.Count != 5)
             {
                 log = Time.time.ToString("F2") + " Some poses don't have 5 fingers! Interrupting update";
-                Debug.LogError(log);
 
                 confidence = 0.0f;
 
@@ -122,14 +120,20 @@ namespace HandPhysicsToolkit.Input
                     currentDeviceName = device.name;
                     currentDeviceManufacturer = device.manufacturer;
 
-                    deviceOffset = compatibleDevices.Find(x => currentDeviceName.Contains(x.deviceName) && currentDeviceManufacturer.Contains(x.deviceManufacturer));
+                    compatibleDevice = compatibleDevices.Find(x => currentDeviceName.Contains(x.deviceName) && currentDeviceManufacturer.Contains(x.deviceManufacturer));
+
+                    if (compatibleDevice == null)
+                    {
+                        // Find compatible devices without name and use their offsets
+                        compatibleDevice = compatibleDevices.Find(x => currentDeviceName.Length == 0);
+                    }
                 }
 
-                if (deviceOffset != null && deviceOffset.wristOffset != null)
+                if (compatibleDevice != null && compatibleDevice.wristOffset != null)
                 {
                     tsfMatrix = Matrix4x4.TRS(position, rotation, Vector3.one);
-                    position = tsfMatrix.MultiplyPoint3x4(deviceOffset.wristOffset.localPosition);
-                    rotation *= deviceOffset.wristOffset.localRotation;
+                    position = tsfMatrix.MultiplyPoint3x4(compatibleDevice.wristOffset.localPosition);
+                    rotation *= compatibleDevice.wristOffset.localRotation;
                 }
 
                 touchingGrip = gripLerp > minLerpToTouch;
